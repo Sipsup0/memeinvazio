@@ -97,30 +97,42 @@ nav a:hover {
     display: flex;
 }
 
-.fixed {
-    position: fixed;
-    right: 30px;
-    top: 70%;
-    background-color: var(--text-color);
-    width: 60px;
-    height: 60px;
+/* main div formazasa */
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    gap: 40px;
+    padding: 40px;
+}
+
+.newMeme{
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-image: url('../img/transparent.jpg');
+    position: relative;
+}
+
+.newMeme > label {
+    background-color: #62605c;
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    color: white;
+    font-size: 1rem;
+    border-radius: 1.875rem;
+    padding: 0.6;
     cursor: pointer;
-    z-index: 1000;
     transition: ease 0.5s;
 }
 
-.fixed:hover {
+.newMeme > label:hover {
     transform: scale(1.1);
 }
 
-.fixed > i {
-    color: white;
-    font-size: 2.5rem;
-}
+
 
 /* hamburger menu 768px-tol */
 
@@ -140,15 +152,5 @@ nav a:hover {
         left: 0;
         font-size: 1.5rem;
         display: none;
-    }
-
-    .fixed {
-        width: 40px;
-        height: 40px;
-    }
-
-    .fixed > i {
-        color: white;
-        font-size: 2.5rem;
     }
 }
